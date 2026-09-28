@@ -3,10 +3,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     openai_api_key: str
-    openai_model: str = "gpt-4.1-mini"
-    openai_base_url: str = "https://api.openai.com/v1"
+    openai_model: str
+    openai_base_url: str
 
-    guardrails_model: str = "gpt-4.1-mini"
+    guardrails_model: str
     guardrails_config_path: str = "guardrails_config"
 
     products_file: str = "data/products.json"
@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     movements_file: str = "data/movements.json"
     idempotency_file: str = "data/idempotency_keys.json"
 
-    currency: str = "PKR"
+    currency: str
 
     model_config = SettingsConfigDict(env_file=".env")
 
