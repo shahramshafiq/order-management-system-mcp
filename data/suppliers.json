@@ -1,0 +1,14 @@
+{
+  "suppliers": [
+    {
+      "id": "SUP-001",
+      "name": "Alpha Traders",
+      "contact_email": "sales@alphatraders.example.com"
+    },
+    {
+      "id": "SUP-002",
+      "name": "Bright Wholesale Co.",
+      "contact_email": "orders@brightwholesale.example.com"
+    }
+  ]
+}

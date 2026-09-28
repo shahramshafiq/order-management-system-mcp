@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+pydantic-settings
+mcp[cli]
+openai
+nemoguardrails
+pytest
+pytest-asyncio
