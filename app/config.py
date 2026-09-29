@@ -22,3 +22,5 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+
+os.environ.setdefault("OPENAI_API_KEY", settings.openai_api_key)
