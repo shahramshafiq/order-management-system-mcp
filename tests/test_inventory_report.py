@@ -17,7 +17,7 @@ def test_report_includes_revenue_from_confirmed_order(sample_product):
     )
     update_order_status(order["id"], "confirmed")
 
-    today = date.today()
+    today = datetime.now(timezone.utc).date()
     report = get_inventory_report(
         start_date=today.isoformat(),
         end_date=(today + timedelta(days=1)).isoformat(),
@@ -51,7 +51,7 @@ def test_report_calculates_inventory_value_from_latest_restock(sample_product):
         unit_cost="50.00",
     )
 
-    today = date.today()
+    today = datetime.now(timezone.utc).date()
     report = get_inventory_report(
         start_date=today.isoformat(),
         end_date=(today + timedelta(days=1)).isoformat(),
