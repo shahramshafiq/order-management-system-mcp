@@ -8,6 +8,7 @@ from pydantic import BaseModel
 
 from app.config import settings
 from app.mcp_server.models import InventoryMovement, MovementType, Order, Product, Supplier
+from decimal import Decimal
 
 _write_lock = threading.Lock()
 
