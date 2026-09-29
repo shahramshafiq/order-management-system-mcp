@@ -65,7 +65,12 @@ def save_movements(movements: list[InventoryMovement]) -> None:
 
 
 def record_movement(
-    product_id: str, movement_type: MovementType, quantity: int, reference: str, note: str = ""
+    product_id: str,
+    movement_type: MovementType,
+    quantity: int,
+    reference: str,
+    note: str = "",
+    unit_cost: Decimal | None = None,
 ) -> InventoryMovement:
     movement = InventoryMovement(
         id=generate_id("MOV"),
@@ -75,6 +80,7 @@ def record_movement(
         reference=reference,
         timestamp=datetime.now(timezone.utc),
         note=note,
+        unit_cost=unit_cost,
     )
     movements = read_movements()
     movements.append(movement)
