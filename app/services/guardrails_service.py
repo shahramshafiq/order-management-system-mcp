@@ -14,7 +14,10 @@ async def check_input(user_message: str) -> bool:
         messages=[{"role": "user", "content": user_message}],
         options=GenerationOptions(rails=["input"]),
     )
-    return not bool(result.response)
+    if not result.response:
+        return True
+    content = result.response[0].get("content", "")
+    return content == user_message
 
 
 async def check_output(user_message: str, bot_response: str) -> bool:
@@ -26,4 +29,7 @@ async def check_output(user_message: str, bot_response: str) -> bool:
         ],
         options=GenerationOptions(rails=["output"]),
     )
-    return not bool(result.response)
+    if not result.response:
+        return True
+    content = result.response[0].get("content", "")
+    return content == bot_response
