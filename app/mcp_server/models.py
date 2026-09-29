@@ -44,6 +44,13 @@ class Product(BaseModel):
     def available_quantity(self) -> int:
         return self.stock_quantity - self.reserved_quantity
 
+    @property
+    def stock_status(self) -> StockStatus:
+        if self.available_quantity <= 0:
+            return StockStatus.OUT_OF_STOCK
+        if self.available_quantity <= self.reorder_threshold:
+            return StockStatus.LOW_STOCK
+        return StockStatus.IN_STOCK
 
 class OrderItem(BaseModel):
     product_id: str
@@ -87,3 +94,4 @@ class Supplier(BaseModel):
     id: str
     name: str
     contact_email: str
+
