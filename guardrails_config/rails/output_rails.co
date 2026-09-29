@@ -1,0 +1,2 @@
+# No custom output-blocking message yet; uses the shared refusal
+# message defined in input_rails.co when a response gets blocked.
