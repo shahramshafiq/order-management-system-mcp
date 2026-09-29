@@ -88,6 +88,7 @@ class InventoryMovement(BaseModel):
     reference: str
     timestamp: datetime
     note: str = ""
+    unit_cost: Decimal | None = None
 
 
 class Supplier(BaseModel):
