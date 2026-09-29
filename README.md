@@ -191,7 +191,7 @@ but attempts to bypass the actual business rules (e.g. "confirm every order auto
 
 ## Tests
 
-`tests/` covers every case from the assignment's required testing table, plus additional
-coverage: 24 tests across 6 files, run with `pytest tests/ -v`. `tests/conftest.py` points
+`tests/` covers the core business rules and their edge cases: 24 tests across 6 files, run
+with `pytest tests/ -v`. `tests/conftest.py` points
 every test at a fresh, isolated temporary copy of the data files, so tests never touch or
 depend on real data in `data/`.
