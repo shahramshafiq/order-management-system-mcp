@@ -1,4 +1,5 @@
 import math
+from typing import Literal
 
 from app.mcp_server import storage
 from app.mcp_server.models import Product, StockStatus
@@ -22,8 +23,8 @@ def search_inventory(
     query: str = "",
     category: str | None = None,
     supplier_id: str | None = None,
-    stock_status: str = "all",
-    sort_by: str = "name",
+    stock_status: StockStatus = StockStatus.ALL,
+    sort_by: Literal["price", "available_quantity", "name"] = "name",
     page: int = 1,
     page_size: int = 10,
 ) -> dict:
