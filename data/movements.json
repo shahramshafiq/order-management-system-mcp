@@ -1,3 +1,34 @@
 {
-  "movements": []
+  "movements": [
+    {
+      "id": "MOV-2a8c976e",
+      "product_id": "PROD-58b768f1",
+      "movement_type": "reservation",
+      "quantity": 3,
+      "reference": "ORD-20260929-E2CC",
+      "timestamp": "2026-09-29T11:08:46.096842Z",
+      "note": "Reserved for order ORD-20260929-E2CC",
+      "unit_cost": null
+    },
+    {
+      "id": "MOV-358b7c4c",
+      "product_id": "PROD-58b768f1",
+      "movement_type": "sale",
+      "quantity": 3,
+      "reference": "ORD-20260929-E2CC",
+      "timestamp": "2026-09-29T11:15:52.585287Z",
+      "note": "Confirmed as sold for order ORD-20260929-E2CC",
+      "unit_cost": null
+    },
+    {
+      "id": "MOV-d336df8c",
+      "product_id": "PROD-58b768f1",
+      "movement_type": "restock",
+      "quantity": 10,
+      "reference": "PO-1001",
+      "timestamp": "2026-09-29T11:18:57.867245Z",
+      "note": "Received from supplier SUP-001",
+      "unit_cost": "2000"
+    }
+  ]
 }

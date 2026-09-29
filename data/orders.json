@@ -1,3 +1,35 @@
 {
-  "orders": []
+  "orders": [
+    {
+      "id": "ORD-f0855d9b",
+      "order_number": "ORD-20260929-E2CC",
+      "customer_name": "Shahram Shafiq",
+      "customer_email": "shahramshafiqgoraya4363@gmail.com",
+      "items": [
+        {
+          "product_id": "PROD-58b768f1",
+          "product_name": "Wireless Mouse",
+          "quantity": 3,
+          "unit_price": "2500",
+          "line_total": "7500.00"
+        }
+      ],
+      "subtotal": "7500.00",
+      "discount": "0.00",
+      "tax": "0.00",
+      "total": "7500.00",
+      "status": "confirmed",
+      "status_history": [
+        {
+          "status": "pending",
+          "timestamp": "2026-09-29T11:08:46.088388Z"
+        },
+        {
+          "status": "confirmed",
+          "timestamp": "2026-09-29T11:15:52.590458Z"
+        }
+      ],
+      "created_at": "2026-09-29T11:08:46.088388Z"
+    }
+  ]
 }
