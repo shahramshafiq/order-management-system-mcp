@@ -30,6 +30,37 @@
         }
       ],
       "created_at": "2026-09-29T11:08:46.088388Z"
+    },
+    {
+      "id": "ORD-25913564",
+      "order_number": "ORD-20260930-65EB",
+      "customer_name": "Customer",
+      "customer_email": "customer@example.com",
+      "items": [
+        {
+          "product_id": "PROD-58b768f1",
+          "product_name": "Wireless Mouse",
+          "quantity": 3,
+          "unit_price": "2500",
+          "line_total": "7500.00"
+        }
+      ],
+      "subtotal": "7500.00",
+      "discount": "0.00",
+      "tax": "0.00",
+      "total": "7500.00",
+      "status": "confirmed",
+      "status_history": [
+        {
+          "status": "pending",
+          "timestamp": "2026-09-30T10:21:23.981072Z"
+        },
+        {
+          "status": "confirmed",
+          "timestamp": "2026-09-30T10:21:24.811767Z"
+        }
+      ],
+      "created_at": "2026-09-30T10:21:23.981072Z"
     }
   ]
 }

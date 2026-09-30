@@ -6,7 +6,7 @@
       "sku": "MOU-001",
       "category": "Electronics",
       "unit_price": "2500",
-      "stock_quantity": 27,
+      "stock_quantity": 24,
       "reserved_quantity": 0,
       "reorder_threshold": 5,
       "supplier_id": "SUP-001",

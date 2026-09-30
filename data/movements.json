@@ -29,6 +29,26 @@
       "timestamp": "2026-09-29T11:18:57.867245Z",
       "note": "Received from supplier SUP-001",
       "unit_cost": "2000"
+    },
+    {
+      "id": "MOV-d457b42e",
+      "product_id": "PROD-58b768f1",
+      "movement_type": "reservation",
+      "quantity": 3,
+      "reference": "ORD-20260930-65EB",
+      "timestamp": "2026-09-30T10:21:23.981072Z",
+      "note": "Reserved for order ORD-20260930-65EB",
+      "unit_cost": null
+    },
+    {
+      "id": "MOV-c158a15d",
+      "product_id": "PROD-58b768f1",
+      "movement_type": "sale",
+      "quantity": 3,
+      "reference": "ORD-20260930-65EB",
+      "timestamp": "2026-09-30T10:21:24.811767Z",
+      "note": "Confirmed as sold for order ORD-20260930-65EB",
+      "unit_cost": null
     }
   ]
 }
